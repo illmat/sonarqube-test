@@ -1,0 +1,109 @@
+
+> sonarqube-test@0.1.0 sonar
+> node sonarqube-project.js
+
+[15:06:12] Starting analysis...
+[15:06:12] Getting info from "package.json" file
+[15:06:12] Checking if executable exists: /home/myuser/.sonar/native-sonar-scanner/sonar-scanner-4.5.0.2216-linux/bin/sonar-scanner
+[15:06:12] Platform binaries for SonarScanner found. Using it.
+INFO: Scanner configuration file: /home/myuser/.sonar/native-sonar-scanner/sonar-scanner-4.5.0.2216-linux/conf/sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: SonarScanner 4.5.0.2216
+INFO: Java 11.0.3 AdoptOpenJDK (64-bit)
+INFO: Linux 5.8.0-49-generic amd64
+INFO: User cache: /home/myuser/.sonar/cache
+INFO: Scanner configuration file: /home/myuser/.sonar/native-sonar-scanner/sonar-scanner-4.5.0.2216-linux/conf/sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: Analyzing on SonarQube server 8.5.1
+INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+INFO: Load global settings
+INFO: Load global settings (done) | time=223ms
+INFO: Server id: EA8D9556-AXdNqttirJAlkWiWOsJi
+INFO: User cache: /home/myuser/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=47ms
+INFO: Load/download plugins (done) | time=90ms
+INFO: Process project properties
+INFO: Process project properties (done) | time=6ms
+INFO: Execute project builders
+INFO: Execute project builders (done) | time=1ms
+INFO: Project key: product:sonarqube-test
+INFO: Base dir: /home/myuser/src/vue/sonarqube-test
+INFO: Working dir: /home/myuser/src/vue/sonarqube-test/.scannerwork
+INFO: Load project settings for component key: 'product:sonarqube-test'
+INFO: Load project settings for component key: 'product:sonarqube-test' (done) | time=52ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=211ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=1472ms
+INFO: Indexing files...
+INFO: Project configuration:
+INFO:   Excluded sources: node_modules/*
+INFO: 7 files indexed
+INFO: 0 files ignored because of inclusion/exclusion patterns
+INFO: 0 files ignored because of scm ignore settings
+INFO: Quality profile for js: Sonar way
+INFO: Quality profile for ts: Sonar way
+INFO: ------------- Run sensors on module sonarqube-test
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=212ms
+INFO: Sensor CSS Rules [cssfamily]
+INFO: 3 source files to be analyzed
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=35ms
+INFO: 3/3 source files have been analyzed
+INFO: Sensor CSS Rules [cssfamily] (done) | time=1140ms
+INFO: Sensor JaCoCo XML Report Importer [jacoco]
+INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=2ms
+INFO: Sensor JavaScript analysis [javascript]
+INFO: 3 source files to be analyzed
+ERROR: Failed to parse file [src/components/WithPropType.vue] at line 11: 'import' and 'export' may appear only with 'sourceType: module'
+INFO: 3/3 source files have been analyzed
+INFO: Java-based frontend sensor [javascript]
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by net.sf.cglib.core.ReflectUtils$1 (file:/home/myuser/.sonar/cache/2fab92be44e07f1d367f891a55258736/sonar-javascript-plugin.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of net.sf.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+INFO: 3 source files to be analyzed
+INFO: Java-based frontend sensor [javascript] (done) | time=276ms
+INFO: Sensor JavaScript analysis [javascript] (done) | time=2221ms
+INFO: 3/3 source files have been analyzed
+INFO: Sensor TypeScript analysis [javascript]
+INFO: Found 1 tsconfig.json file(s): [/home/myuser/src/vue/sonarqube-test/tsconfig.json]
+INFO: 4 source files to be analyzed
+INFO: Analyzing 4 files using tsconfig: /home/myuser/src/vue/sonarqube-test/tsconfig.json
+INFO: Version of TypeScript used during analysis: 3.8.3
+INFO: 4/4 source files have been analyzed
+INFO: Sensor TypeScript analysis [javascript] (done) | time=1045ms
+INFO: Sensor C# Properties [csharp]
+INFO: Sensor C# Properties [csharp] (done) | time=1ms
+INFO: Sensor JavaXmlSensor [java]
+INFO: Sensor JavaXmlSensor [java] (done) | time=1ms
+INFO: Sensor HTML [web]
+INFO: Sensor HTML [web] (done) | time=17ms
+INFO: Sensor VB.NET Properties [vbnet]
+INFO: Sensor VB.NET Properties [vbnet] (done) | time=0ms
+INFO: ------------- Run sensors on project
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=4ms
+INFO: CPD Executor 4 files had no CPD blocks
+INFO: CPD Executor Calculating CPD for 2 files
+INFO: CPD Executor CPD calculation finished (done) | time=10ms
+INFO: Analysis report generated in 46ms, dir size=88 KB
+INFO: Analysis report compressed in 21ms, zip size=19 KB
+INFO: Analysis report uploaded in 73ms
+INFO: ANALYSIS SUCCESSFUL, you can browse http://sonarqube.services/dashboard?id=product%3Asonarqube-test
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://sonarqube.services/api/ce/task?id=AXjqPSzijhmuJo5bE095
+INFO: Analysis total time: 8.136 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 9.040s
+INFO: Final Memory: 14M/74M
+INFO: ------------------------------------------------------------------------
+[15:06:21] Analysis finished.
